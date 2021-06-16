@@ -413,10 +413,169 @@
 }
 
 // end tutorial
-.tutorial__inner {}
+// start footer
+.footer {
+    background-color: $bg;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0px 80px;
+    }
+}
 
-.tutorial__item {}
+.footer__col {
+    max-width: 270px;
+    width: 100%;
+    &-menu {
+        max-width: 220px;
+    }
+    &-title {
+        font-size: 22px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        padding-bottom: 31px;
+        margin-bottom: 30px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 2px;
+            width: 51px;
+            bottom: 0;
+            height: 3px;
+            background-color: $green;
+        }
+    }
+    &-text {
+        color: #b7c3c8;
+        margin-bottom: 30px;
+    }
+}
 
-.tutorial__item-img {}
+.footer__info {
+    margin-top: 18px;
+    color: #fff;
+    @include f500;
+    padding-left: 30px;
+    position: relative;
+    &::before {
+        position: absolute;
+        left: 0;
+        content: '\f041';
+        font-family: 'icomoon';
+        color: $green;
+        font-size: 18px;
+    }
+}
 
-.tutorial__item-title {}
+.footer__info-phone {
+    &::before {
+        content: '\f095';
+    }
+}
+
+.footer__copy {
+    border-top: 1px solid #919699;
+}
+
+.footer__copy-text {
+    text-align: center;
+    padding: 25px 0px;
+    font-size: 15px;
+    color: #919699;
+}
+
+.footer__col-list {
+    a {
+        margin-bottom: 15px;
+        padding-left: 22px;
+        color: #b7c3c8;
+        position: relative;
+        &::before {
+            content: '\f105';
+            position: absolute;
+            left: 0;
+            font-family: 'icomoon';
+            color: $green;
+            font-size: 18px;
+        }
+    }
+}
+
+.footer__social-link {
+    margin-bottom: 33px;
+    li {
+        display: inline-block;
+    }
+    &+li {
+        margin-left: 8px;
+    }
+    a {
+        width: 28px;
+        height: 28px;
+        background-image: url(../img/css_sprites.png);
+    }
+}
+
+.link-twiter {
+    background-position: -28px 0;
+}
+
+.link-youtube {
+    background-position: -56px 0;
+}
+
+.link-pinterest {
+    background-position: -84px 0;
+}
+
+.link-linkedin {
+    background-position: -112px 0;
+}
+
+.footer__form-title {
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer__form {
+    position: relative;
+    input {
+        margin-top: 15px;
+        bottom: none;
+        outline: none;
+        background-color: #2f3c43;
+        display: block;
+        width: 100%;
+        height: 40px;
+        color: #fff;
+        font-size: 14px;
+        padding-left: 13px;
+        padding-right: 50px;
+        &::placeholder {
+            color: #697378;
+        }
+    }
+    button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $green;
+        border: none;
+        height: 39px;
+        width: 42px;
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            font-family: 'icomoon';
+            content: '\f124';
+            color: #fff;
+            font-size: 21px;
+            top: 8px;
+            left: 13px;
+        }
+    }
+}
+
+// end footer
