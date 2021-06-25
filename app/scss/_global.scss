@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    overflow: scroll;
 }
 
 *,
@@ -12,6 +13,11 @@ a {
     display: inline-block;
     text-decoration: none;
     color: $text;
+}
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
 }
 
 body {
@@ -59,4 +65,17 @@ li {
 .rate-star {
     display: inline-block;
     margin-right: 13px;
+}
+
+.angle-right {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: '\f105';
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: $green;
+        font-size: 14px;
+    }
 }
