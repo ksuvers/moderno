@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?xomlfo');
-    src: url('../fonts/icomoon.eot?xomlfo#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?xomlfo') format('truetype'), url('../fonts/icomoon.woff?xomlfo') format('woff'), url('../fonts/icomoon.svg?xomlfo#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?5j9c9k');
+    src: url('../fonts/icomoon.eot?5j9c9k#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?5j9c9k') format('truetype'), url('../fonts/icomoon.woff?5j9c9k') format('woff'), url('../fonts/icomoon.svg?5j9c9k#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -172,6 +172,10 @@
     content: "\f112";
 }
 
+.icon-meh-o:before {
+    content: "\f11a";
+}
+
 .icon-mail-reply-all:before {
     content: "\f122";
 }
@@ -198,6 +202,10 @@
 
 .icon-yen:before {
     content: "\f157";
+}
+
+.icon-sort-amount-desc:before {
+    content: "\f161";
 }
 
 .icon-foursquare:before {
