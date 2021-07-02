@@ -1629,10 +1629,6 @@ irs-single,
     }
 }
 
-.aside__item {}
-
-.aside__title {}
-
 .price__box {
     display: flex;
     justify-content: space-between;
@@ -1778,4 +1774,92 @@ irs-single,
         @include f500;
     }
 } // end product-one
+//start 404
+.breadcrumbs {
+    background-color: #fff;
+}
+
+.page-404__wrapper,
+.about__wrapper {
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    margin-bottom: 150px;
+}
+
+.page-404__head,
+.about__head {
+    font-size: 24px;
+    color: #444;
+    @include f500;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 23px 27px;
+}
+
+.page-404__inner {
+    text-align: center;
+    background-color: $green;
+    color: #fff;
+}
+
+.page-404__404 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 300px;
+    font-weight: 800;
+    padding-top: 70px;
+    position: relative;
+    line-height: 300px;
+    padding-bottom: 20px;
+    &::after {
+        position: absolute;
+        background-image: url(../img/people.png);
+        width: 150px;
+        height: 292px;
+        content: "";
+        margin-left: 20px;
+    }
+}
+
+.page-404__title {
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.page-404__text {
+    font-size: 18px;
+    max-width: 501px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.page-404__link {
+    border: 1px solid #fff;
+    padding: 20px 30px 16px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    margin-bottom: 100px;
+}
+
+//end 404
+//start about
+.about__inner {
+    padding: 0px 50px;
+}
+
+.about__box {
+    h3 {
+        font-size: 30px;
+        @include f700;
+        color: #444;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+//end about
 @import '_media';
