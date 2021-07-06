@@ -43,6 +43,8 @@ $(function() {
         prefix: "$",
     });
 
+    /* для inputt/select */
+    $('input[type="file"],select').styler();
 
     $('.product-one__tabs .tab,.settings__tabs .tab').on('click', function(event) {
         var id = $(this).attr('data-id');
