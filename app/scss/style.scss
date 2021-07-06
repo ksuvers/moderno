@@ -2479,4 +2479,104 @@ textarea {
 }
 
 //end upload
+//start withdrawals
+.withdrawals__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+.withdrawals__col {
+    max-width: 570px;
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    border: 1px solid #d7d7d7;
+}
+
+.withdrawals__box {}
+
+.withdrawals__title {
+    color: $bg;
+    font-size: 24px;
+    padding: 18px 32px 24px;
+    @include f500;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 30px;
+}
+
+.withdrawals__content {
+    padding-left: 35px;
+    padding-right: 40px;
+    button {
+        margin-bottom: 50px;
+        cursor: pointer;
+        padding: 0px 20px;
+        height: 45px;
+        background-color: $green;
+        color: #fff;
+        outline: none;
+        border: none;
+        font-size: 14px;
+    }
+}
+
+.withdrawals__form-line {
+    margin-bottom: 25px;
+    label {
+        display: block;
+        width: 100%;
+        @include f500;
+        font-size: 16px;
+        color: $bg;
+        margin-bottom: 15px;
+        span {
+            color: $green;
+        }
+    }
+    input {
+        width: 100%;
+    }
+}
+
+.withdrawals__content-items {
+    padding-bottom: 35px;
+}
+
+.withdrawals__content-item {
+    display: flex;
+    height: 42px;
+    align-items: center;
+    font-size: 13px;
+    color: #444;
+    &:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+}
+
+.withdrawals__content-date {
+    width: 154px;
+    @include f500;
+    padding-left: 20px;
+}
+
+.withdrawals__content-e-mail {
+    @include f500;
+    width: 180px;
+}
+
+.withdrawals__content-price {
+    @include f700;
+    width: 70px;
+}
+
+.withdrawals__content-status {
+    @include f700;
+    width: 88px;
+    &.withdrawals__content-paid {
+        color: $green;
+    }
+}
+
+//end withdrawals
 @import '_media';
