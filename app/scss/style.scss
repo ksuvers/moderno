@@ -532,6 +532,12 @@
     background-color: $grey;
 }
 
+.products__wrepper,
+.product-slider__wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .products__inner-btn {
     text-align: center;
     margin-bottom: 60px;
@@ -554,12 +560,21 @@
 
 .products__inner-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-left: -30px;
+}
+
+.products {
+    .product__item {
+        flex-basis: calc(25% - 30px);
+        margin-left: 30px;
+    }
 }
 
 .product__item {
     max-width: 442px;
+    background-color: #fff;
     width: 100%;
     box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
     margin-bottom: 30px;
@@ -1216,6 +1231,8 @@ button.icon-unsorted {
     .product__item {
         transition: all 0.5s;
         flex-basis: calc(33.3333% - 30px);
+        background-color: #fff;
+        margin-left: 30px;
     }
     .product__item-img {
         min-height: 180px;
@@ -1243,9 +1260,9 @@ button.icon-unsorted {
 .product-page__items {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
-    padding-left: 30px;
+    justify-content: flex-start;
+    margin-left: -30px;
+    margin-bottom: 30px;
 }
 
 .pagination__list {
@@ -2494,8 +2511,6 @@ textarea {
     height: 100%;
     border: 1px solid #d7d7d7;
 }
-
-.withdrawals__box {}
 
 .withdrawals__title {
     color: $bg;
