@@ -1894,7 +1894,8 @@ irs-single,
     margin-bottom: 50px;
     iframe {
         height: 415px;
-        width: 1090px;
+        max-width: 1090px;
+        width: 100%;
     }
 }
 
